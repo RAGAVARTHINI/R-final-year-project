@@ -1,0 +1,12 @@
+cholera<-read.csv(file.choose(),header = TRUE)
+blood_vidal<-read.csv(file.choose(),header = TRUE)
+malaria<-read.csv(file.choose(),header = TRUE)
+dengue<-read.csv(file.choose(),header = TRUE)
+swine_flu<-read.csv(file.choose(),header = TRUE)
+
+par(mfrow=c(2,3))
+plot(cholera$month.year,cholera$Count,xlab="month",ylab="count",main="Cholera","b")
+plot(blood_vidal$month.year,blood_vidal$Count,xlab="month",ylab="count",main="BloodVidal","b")
+plot(malaria$month.year,malaria$Count,xlab="month",ylab="count",main="Malaria","b")
+plot(dengue$month.year,dengue$Count,xlab="month",ylab="count",main="Dengue","b")
+plot(swine_flu$month.year,swine_flu$Count,xlab="month",ylab="count",main="Swine Flu","b")
